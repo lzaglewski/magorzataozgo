@@ -1,4 +1,13 @@
 
+
+
+
+
+
+
+
+
+
 .imageAndText .col  {position: absolute; z-index: 100; top: 290px; left: 20%;
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
@@ -13,8 +22,8 @@
     width: 100%;
 }
 
-
 ul{
+
     list-style: none;
     padding-left: 200px;
     padding-top: 10px;
@@ -31,12 +40,27 @@ li a{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
     color: #6D6D6D;
+    background-color: white;
 }
+
+
+
 
 a:hover{
     text-decoration: none;
+
 }
 
+.nav .active a:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+
+}
+
+.nav>li>a:hover{
+    background-color: white;
+}
 
 a:before {
     content: "";
@@ -57,12 +81,18 @@ a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+
+}
+
+.nav{
+    padding-left: 100px;
 }
 
 
 nav{
 
     background-color: white;
+
 }
 
 
@@ -112,12 +142,15 @@ nav{
 
     .navbar-nav>li>a:hover {
 
+
         padding-top: 10px;
         padding-bottom: 10px;
         display: block;
 
 
     }
+
+
 
 
     a:hover:before {
@@ -190,6 +223,7 @@ nav{
 body {
 
 
+    height: 100%;
 }
 
 

@@ -16,6 +16,21 @@
 
 
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<script>
+    function handleResize() {
+        var h = $(window).height();
+        $('#wrapper').css({'height':h+'px'});
+    }
+    $(function(){
+        handleResize();
+
+        $(window).resize(function(){
+            handleResize();
+        });
+    });
+</script>
+
+
 
 
 </head>
@@ -34,11 +49,11 @@
         </div>
         <div>
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="navbar-nav ">
+                <ul class="nav navbar-nav">
                     <li><a href="#section1">ZAPROSZENIE</a></li>
-                    <li><a href="#section2">KARIERA</a></li>
-                    <li><a href="#section3">PROGRAM WYBORCZY</a></li>
-                    <li><a href="#section4">CERTYFIKATY</a></li>
+                    <li><a href="#section2">PROGRAM WYBORCZY</a></li>
+                    <li><a href="#section3">ŻYCIORYS</a></li>
+                    <li><a href="#section4">OSIĄGNIĘCIA</a></li>
 
                 </ul>
             </div>
@@ -52,10 +67,13 @@
 
 
 
-<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="img/microscope.jpg" data-natural-width="1920" data-natural-height="1274" style="height: 700px;">
+
+<div id="wrapper" class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="img/microscope.jpg" data-natural-width="1920" data-natural-height="1274" >
 
     <!--<img id="microscope" class="img-responsive img-center" src="img/microscope.jpg" alt="" style="z-index: 1">
     <div id="maska" class="img-responsive img-center">-->
+
+
 
 
 <div class="imageAndText">
@@ -112,7 +130,13 @@
         // Add scrollspy to <body>
 
 
+
         $('body').scrollspy({target: ".navbar", offset: 100});
+
+
+
+
+
 
 
         // Add smooth scrolling on all links inside the navbar

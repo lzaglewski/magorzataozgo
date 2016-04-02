@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="custom.css">
     <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    <script src="parallax.js-1.4.2/parallax.min.js"></script>
 
 
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -34,10 +35,10 @@
         <div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="navbar-nav ">
-                    <li><a href="#section1">O MNIE</a></li>
+                    <li><a href="#section1">ZAPROSZENIE</a></li>
                     <li><a href="#section2">KARIERA</a></li>
-                    <li><a href="#section3">PROGRAM</a></li>
-                    <li><a href="#section4">OSIĄGNIĘCIA</a></li>
+                    <li><a href="#section3">PROGRAM WYBORCZY</a></li>
+                    <li><a href="#section4">CERTYFIKATY</a></li>
 
                 </ul>
             </div>
@@ -50,19 +51,21 @@
 <!nav ----------------------!>
 
 
+
+<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="img/microscope.jpg" data-natural-width="1920" data-natural-height="1274" style="height: 700px;">
+
+    <!--<img id="microscope" class="img-responsive img-center" src="img/microscope.jpg" alt="" style="z-index: 1">
+    <div id="maska" class="img-responsive img-center">-->
+
+
 <div class="imageAndText">
-
-    <img id="microscope" class="img-responsive img-center" src="img/microscope.jpg" alt="" style="z-index: 1">
-    <div id="maska" class="img-responsive img-center">
-
-    </div>
-
-    <div class="col">
+    <div class="col ">
         <div class="col-lg-11">
             <p>dr hab. Małgorzata Ożgo</p>
-            <h3>kandydat na rektora ZUT na kadencję 2016-2020</h3>
+            <h3>kandydatka na dziekana WBiHZ, ZUT na kadencję 2016 – 2020</h3>
         </div>
     </div>
+</div>
 
 </div>
 
@@ -70,8 +73,10 @@
 
 <div id="section1" class="container-fluid">
     <h1>Section 1</h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+
+
+    </p>
+
 </div>
 <div id="section2" class="container-fluid">
     <h1>Section 2</h1>
@@ -100,15 +105,7 @@
 <script>
 
 
-    $( window ).load(function() {
-        var height=$("#microscope").height();
-        $("#maska").height(height-height*0.20);
-    });
 
-    $( window ).resize(function() {
-        var height=$("#microscope").height();
-        $("#maska").height(height-height*0.20);
-    });
 
 
     $(document).ready(function(){

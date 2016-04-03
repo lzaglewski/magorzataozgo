@@ -1,5 +1,54 @@
 
+.pasek{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #adadad;
+    margin-bottom: -2px;
+}
 
+
+
+#program_wyborczy_pdf{
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    padding-top: 5%;
+    margin-left: 65%;
+}
+
+
+#section4 h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #262626;
+    text-align: center;
+    font-size: 32px;
+}
+
+#section4 .pasek{
+    background-color: #262626;
+    width: 400px;
+    left: 50%;
+    margin-left: -200px;
+    height: 2px;
+    margin-bottom: 80px;
+}
+
+
+#section4 a:hover{
+    opacity: 0.3;
+
+}
+
+
+#program_wyborczy{
+    background-color: white;
+    padding-top: 90px;
+    -webkit-box-shadow: 19px 49px 100px -21px rgba(0,0,0,0.75);
+    -moz-box-shadow: 19px 49px 100px -21px rgba(0,0,0,0.75);
+    box-shadow: 19px 49px 100px -21px rgba(0,0,0,0.75);
+
+}
 
 
 .circular{
@@ -7,9 +56,9 @@
     left: 10%;
     top: 20%;
     display:block;
-    width: 450px;
+    width: 350px;
 
-    height: 450px;
+    height: 350px;
     border-radius: 50%;
     overflow: hidden;
     border: 4px solid rgba(27, 72, 183, 0.28);
@@ -32,15 +81,27 @@
 .imageAndText .col  {position: absolute; z-index: 100; top: 30%; left: 40%;
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 62px;
+    font-size: 50px;
     width: 60%;
 }
 
-.imageAndText .col h3 {position: absolute; z-index: 100; top: 123px; left: 0%;
+.imageAndText .col h3 {position: absolute; z-index: 100; top: 90%; left: 5%;
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 32px;
     width: 100%;
+}
+
+
+
+.imageAndText #haslo p{
+    position: absolute;
+    top: 70%; left: 60%;
+
+    color: white;
+
+    font-family: 'Alegreya', serif;
+    font-size: 46px;
 }
 
 #navbar ul{
@@ -83,7 +144,18 @@ a:hover{
     background-color: white;
 }
 
-a:before {
+
+#top a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+
+}
+
+
+
+
+ a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -98,7 +170,7 @@ a:before {
     transition: all 0.3s ease-in-out 0s;
 }
 
-a:hover:before {
+#control a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
@@ -107,7 +179,8 @@ a:hover:before {
 
 .top .nav{
 
-    margin-left: 20%;
+    margin-left: 10%;
+    padding-top: 13px;
 }
 
 
@@ -126,37 +199,12 @@ a:hover:before {
 .top nav{
 
     background-color: white;
-    -webkit-box-shadow: 0px -65px 85px 11px rgba(0,0,0,0.29);
+   /* -webkit-box-shadow: 0px -65px 85px 11px rgba(0,0,0,0.29);
     -moz-box-shadow: 0px -65px 85px 11px rgba(0,0,0,0.29);
-    box-shadow: 0px -65px 85px 11px rgba(0,0,0,0.29);
+    box-shadow: 0px -65px 85px 11px rgba(0,0,0,0.29);*/
 
 }
 
-@media (max-width: 1300px) {
-
-    .circular{
-        position: absolute;
-        left: 10%;
-        top: 20%;
-        display:block;
-        width: 350px;
-
-        height: 350px;
-        border-radius: 50%;
-        overflow: hidden;
-        border: 4px solid rgba(27, 72, 183, 0.28);
-
-
-        box-shadow: 0 0 10px rgba(0, 0, 0, .8);
-        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .8);
-        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .8);
-    }
-
-    .circular img{
-        width: 100%;
-    }
-
-}
 
 
 @media (max-width: 1200px) {
@@ -166,6 +214,9 @@ a:hover:before {
     }
     .navbar-toggle {
         display: block;
+        padding: 0;
+        padding-right: 20px;
+        margin: 0;
 
 
     }
@@ -214,18 +265,27 @@ a:hover:before {
     }
 
 
-
-
-    a:hover:before {
-        visibility: visible;
-        -webkit-transform: scaleX(0.3);
-        transform: scaleX(0.3);
+    .nav-pills>li.active>a:hover{
+        background-color: white;
+        color: black;
     }
+
+
+
+
 
     .nav .active a:before {
         visibility: visible;
         -webkit-transform: scaleX(0.3);
         transform: scaleX(0.3);
+
+    }
+
+
+    #top a:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
 
     }
 
@@ -239,9 +299,9 @@ a:hover:before {
     }
     .collapsing {
         overflow: hidden!important;
-        -webkit-box-shadow: 0px 62px 63px -22px rgba(0,0,0,0.3);
+      /*  -webkit-box-shadow: 0px 62px 63px -22px rgba(0,0,0,0.3);
         -moz-box-shadow: 0px 62px 63px -22px rgba(0,0,0,0.3);
-        box-shadow: 0px 62px 63px -22px rgba(0,0,0,0.3);
+        box-shadow: 0px 62px 63px -22px rgba(0,0,0,0.3);*/
     }
 
 
@@ -258,27 +318,38 @@ a:hover:before {
         width: 100%;
         margin-left: 0;
 
-        -webkit-box-shadow: 0px 62px 63px -22px rgba(0,0,0,0.3);
+       /* -webkit-box-shadow: 0px 62px 63px -22px rgba(0,0,0,0.3);
         -moz-box-shadow: 0px 62px 63px -22px rgba(0,0,0,0.3);
-        box-shadow: 0px 62px 63px -22px rgba(0,0,0,0.3);
+        box-shadow: 0px 62px 63px -22px rgba(0,0,0,0.3);*/
     }
 
 
 
-    .imageAndText {position: relative;}
-    .imageAndText .col {position: absolute; z-index: 100; top: 160px; left: 30%;
+
+    .imageAndText .col  {position: absolute; z-index: 100; top: 30%; left: 40%;
         color: white;
         font-family: 'Source Sans Pro', sans-serif;
-        font-size: 42px;
-        width: 100%;
+        font-size: 40px;
+        width: 60%;
     }
 
-
-    .imageAndText .col h3 {position: absolute; z-index: 100; top: 60px; left: 10%;
+    .imageAndText .col h3 {position: absolute; z-index: 100; top: 90%; left: 5%;
         color: white;
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 22px;
         width: 100%;
+    }
+
+
+
+    .imageAndText #haslo p{
+        position: absolute;
+        top: 70%; left: 60%;
+
+        color: white;
+
+        font-family: 'Alegreya', serif;
+        font-size: 36px;
     }
 
 
@@ -287,9 +358,9 @@ a:hover:before {
         left: 10%;
         top: 20%;
         display:block;
-        width: 150px;
+        width: 250px;
 
-        height: 150px;
+        height: 250px;
         border-radius: 50%;
         overflow: hidden;
         border: 4px solid rgba(27, 72, 183, 0.28);
@@ -312,6 +383,13 @@ a:hover:before {
 @media (max-width: 700px) {
 
 
+    #logo1{
+        width: 50px;
+    }
+    #logo2{
+        width: 158px;
+
+    }
     .circular{
         position: absolute;
         left: 50%;
@@ -335,20 +413,29 @@ a:hover:before {
         width: 100%;
     }
 
-    .imageAndText {position: relative;}
-    .imageAndText .col {position: absolute; z-index: 100; top: 340px; left: 5%;
+
+    .imageAndText .col  {position: absolute; z-index: 100; top: 50%; left: 10%;
         color: white;
         font-family: 'Source Sans Pro', sans-serif;
-        font-size: 36px;
-        width: 80%;
+        font-size: 18px;
+        width: 65%;
     }
 
-
-    .imageAndText .col h3 {position: absolute; z-index: 100; top: 60px; left: 5%;
+    .imageAndText .col h3 {position: absolute; z-index: 100; top: 90%; left: 10%;
         color: white;
         font-family: 'Source Sans Pro', sans-serif;
-        font-size: 16px;
+        font-size: 12px;
         width: 70%;
+    }
+
+    .imageAndText #haslo p{
+        position: absolute;
+        top: 75%; left: 30%;
+        width: 55%;
+        color: white;
+
+        font-family: 'Alegreya', serif;
+        font-size: 26px;
     }
 }
 
@@ -373,18 +460,19 @@ nav#scroll.col-sm-3{
 }
 
 
-#section1 {padding-top:100px;height:800px;color: black; background-color: white;}
-#section2 {padding-top:100px;height:800px;color: #fff; background-color: #673ab7;}
-#section3 {padding-top:100px;color: black;}
-#section41 {padding-top:100px;height:800px;color: #fff; background-color: #00bcd4;}
-#section42 {padding-top:100px;height:500px;color: #fff; background-color: #009688;}
+
+#section1 {padding-top:0px;height:100%;color: black; background-color: white;}
+#section2 {padding-top:100px;padding-bottom:100px;height:100%;color: black; background-color: #f9f9f9;}
+#section3 {padding-top:50px;color: black;padding-bottom: 100px; overflow: auto}
+#section4 {padding-top:150px;height:100%;color: #111111; background-color: white}
+#section42 {height:50px;color: #3e3e3e; background-color: #222222 }
 
 
 
 
 
 
-#section16 {height:800px;color: black; background-color: white;}
+#section16 {padding-top:100px;height:800px;color: black; background-color: white;}
 #section26 {padding-top:100px;height:800px;color: black; background-color: white;}
 #section36 {padding-top:100px;color: black;}
 #section46 {padding-top:100px;height:800px;color: black; background-color: white;}

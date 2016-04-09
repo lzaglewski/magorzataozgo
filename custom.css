@@ -1,4 +1,7 @@
 
+ul{
+    list-style: disc;
+}
 .pasek{
     position: relative;
     width: 100%;
@@ -85,7 +88,7 @@
     width: 60%;
 }
 
-.imageAndText .col h3 {position: absolute; z-index: 100; top: 90%; left: 5%;
+.imageAndText .col h3 {position: absolute; z-index: 100; top: 90%; left: 3%;
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 32px;
@@ -96,7 +99,7 @@
 
 .imageAndText #haslo p{
     position: absolute;
-    top: 70%; left: 60%;
+    top: 70%; left: 40%;
 
     color: white;
 
@@ -333,7 +336,7 @@ a:hover{
         width: 60%;
     }
 
-    .imageAndText .col h3 {position: absolute; z-index: 100; top: 90%; left: 5%;
+    .imageAndText .col h3 {position: absolute; z-index: 100; top: 90%; left: 3%;
         color: white;
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 22px;
@@ -344,7 +347,7 @@ a:hover{
 
     .imageAndText #haslo p{
         position: absolute;
-        top: 70%; left: 60%;
+        top: 70%; left: 40%;
 
         color: white;
 
@@ -421,7 +424,7 @@ a:hover{
         width: 65%;
     }
 
-    .imageAndText .col h3 {position: absolute; z-index: 100; top: 90%; left: 10%;
+    .imageAndText .col h3 {position: absolute; z-index: 100; top: 90%; left: 5%;
         color: white;
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 12px;
@@ -430,7 +433,7 @@ a:hover{
 
     .imageAndText #haslo p{
         position: absolute;
-        top: 75%; left: 30%;
+        top: 75%; left: 20%;
         width: 55%;
         color: white;
 
